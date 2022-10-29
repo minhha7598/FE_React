@@ -1,0 +1,27 @@
+.body__default{
+    background-color: rgb(212, 207, 207);
+    text-align: center;
+    padding-top: 50px;
+    height: 680px;
+    .title__body{
+        font-size: 60px;
+    }
+    // .img{
+    //     width: 40px;
+    //     height: 40px;
+    //     margin: 0;
+    //     position: absolute;
+    //     // top: 90%;
+    //     // left: 50%;
+    //     -ms-transform: translate(-50%, -50%);
+    //     transform: translate(-50%, -100%);
+    // }
+    .carousel-slider{
+        margin: 0;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}

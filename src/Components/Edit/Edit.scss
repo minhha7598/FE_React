@@ -1,0 +1,38 @@
+@import '../../styles/variable.scss';
+
+.Edit{
+    color: $color;
+    background: $backgroundForm;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -44%);
+    border-radius: 20px;
+    width: 450px;
+    text-align: center;
+    font-size: $fontSize;
+    .label__edit{
+        font-size: $TitleFontSize;
+    }
+    .notice__edit{
+        font-size: $fontSize;
+    }
+    & input[type=text] {
+        @include input(280px, 30px, 5px, 2px);
+        &:focus{
+            outline: none;
+            border: 5px solid #383737;
+        }
+    }
+    & button[type=submit] {
+        background: $btnSbm;
+        @include input(100px, 35px, 5px, 10px);
+    }
+    .success{
+        color:$success;
+    }
+}
+
+
+
+

@@ -1,0 +1,18 @@
+@import '../../styles/variable.scss';
+
+.nav__default{
+    background-image: linear-gradient(to right top, #000000, #0b0b0b, #131313, #19191a, #1f1f20, #1f1f20, #1f1f20, #1f1f20, #19191a, #131313, #0b0b0b, #000000);
+    display: flex;
+    align-items: center;
+    @include input(auto, 70px, 0px, auto);
+    .title{
+        float: right;
+        text-decoration: none;
+        margin: 15px;    
+        color: $color;
+    }
+    a.title:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}

@@ -1,0 +1,52 @@
+@import '../../styles/variable.scss';
+
+.header__admin{
+    background-image: linear-gradient(to right top, #000000, #0b0b0b, #131313, #19191a, #1f1f20, #1f1f20, #1f1f20, #1f1f20, #19191a, #131313, #0b0b0b, #000000);
+    height: 90px;
+    display: flex;
+    padding-top: 15px;
+    color: $color;
+    font-size: $fontSize;
+    margin: auto;
+    .title{
+        flex-basis: 40%;
+        margin-left: 30px;
+        font-size: $TitleFontSize;
+    }
+    .search{
+        flex-basis: 40%;
+        text-align: center;
+        margin: auto;
+        & input {
+            background-color: #323235;
+            padding: 5px;
+            width: 30%;
+            outline: none;
+            color: $color;
+        }
+        .btn-search{
+            padding: 5px;
+            width: 60px;
+            outline: none;
+            background-color: rgb(150, 153, 161);
+        }
+    }
+   
+    .logout{
+        flex-basis: 20%;
+        margin: auto;
+        .btn-logout{
+            float: right;
+            margin-right: 45px;
+            cursor: pointer;
+        }
+        .btn-logout:hover{
+            text-decoration:underline;
+        }
+    }
+    
+}
+
+
+
+

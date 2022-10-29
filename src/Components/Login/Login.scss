@@ -1,0 +1,31 @@
+@import '../../styles/variable.scss';
+
+.login__form{
+    padding: 3em;
+    background-color: rgb(193, 193, 194);
+    color: $color;
+    @include input(300px, 310px, 15px, 50px auto auto auto);
+    font-size: $fontSize;
+}
+.login__failed{
+    padding: 30px;
+    background-color: rgb(193, 193, 194);
+    color: $color;
+    font-size: $fontSize;
+    @include input(300px, 380px, 15px, 50px auto auto auto);
+    .err{
+        color: rgb(175, 5, 5)
+    }
+}
+.title__login{
+    font-size: 30px;
+}
+.button {
+    color: $color;
+    background: rgb(58, 183, 81);
+  
+    @include input(auto, auto, 5px, auto);
+    &:hover{
+        background: rgb(32, 164, 56);
+    }
+}

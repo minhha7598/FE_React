@@ -1,0 +1,25 @@
+@import '../../styles/variable.scss';
+
+.Detail{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -44%);
+    padding: 30px 70px;
+    color: $color;
+    background: $backgroundForm;
+    text-align: center;
+    font-size: 10px;
+    @include input(450px, 620px, 15px, 0px);
+    .label__detail{
+        font-size: $TitleFontSize;
+    }
+    .detail__form{
+        background-color: rgb(37, 39, 39);
+        @include input(auto, auto, 15px, 0px);
+    }
+    .ava__detail{
+        @include input(90px, 90px, 50%, 0px);
+    }
+}
+

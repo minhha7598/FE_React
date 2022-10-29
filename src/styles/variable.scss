@@ -1,0 +1,20 @@
+//VARIABLES
+$color: rgb(255, 255, 255);
+$btnSbm: rgb(142, 241, 154);
+$success:  rgb(23, 180, 5);
+$backgroundForm: rgba(37, 40, 44, 0.8);
+$mail: rgb(247, 114, 136);
+$refresh: rgb(98, 220, 241);
+$delete: rgb(236, 130, 1);
+$edit: rgb(134, 232, 134);
+$detail: rgb(134, 144, 232);
+$TitleFontSize: 25px;
+$fontSize: 13px;
+
+//MIXINS
+@mixin input($width, $height, $boder_radius, $magin){
+    width: $width;
+    height: $height;
+    border-radius: $boder_radius;
+    margin: $magin;
+}

@@ -1,0 +1,33 @@
+@import '../../styles/variable.scss';
+
+.register__form{
+    background-color: rgb(193, 193, 194);
+    padding: 3em;
+    @include input(300px, 480px, 15px, 50px auto auto auto);
+    font-size: $fontSize;
+    color: $color;
+}
+.register__failed{
+    background-color: rgb(193, 193, 194);
+    margin: 100px auto;
+    padding: 3em;
+    color: $color;
+    @include input(300px, 600px, 15px, 50px auto auto auto);
+    font-size: $fontSize;
+    .err{
+        color: rgb(175, 5, 5)
+    }
+}
+.title__register{
+    font-size: 40px;
+}
+.body_success_register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+}
+.success__register{
+    font-size: 60px;
+    color: rgb(9, 179, 74);
+}

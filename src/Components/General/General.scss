@@ -1,0 +1,42 @@
+@import '../../styles/variable.scss';
+
+.General{
+    background-color:$color;
+    color: $color;
+    font-size: $fontSize;
+    flex-basis: 20%;
+    @include input(auto, auto, none, 20px 20px auto auto);
+    .infor__general{
+        background-image: linear-gradient(to right bottom, #2d2d34, #26262d, #1f1f26, #18191f, #111218);
+        padding: 5px;
+        border-radius: 20px;
+        .general__title{
+            margin: 15px auto 20px auto;
+            text-align: center;
+            font-size: $TitleFontSize;
+        }
+        .quantity__employee{
+            margin-left: $fontSize;
+        }
+        .total__quantity__employee{
+            margin-left: $fontSize;
+        }
+    }
+    .excel__staff{
+        text-align: center;
+        background-image: linear-gradient(to right bottom, #2d2d34, #26262d, #1f1f26, #18191f, #111218);
+        padding: 5px;
+        @include input(auto, 350px, 20px, 20px auto auto auto);
+        .title__quantity__employee{
+            margin: 15px auto 20px auto;
+            font-size: $TitleFontSize;
+        }
+        .ava{
+            @include input(150px, 150px, 50%, 10px auto auto auto);
+        }
+        .name{
+            font-size: $TitleFontSize;
+            margin-top: 10px;
+        }
+    }
+}

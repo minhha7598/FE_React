@@ -1,0 +1,24 @@
+@import '../../styles/variable.scss';
+
+.NavLogin{
+    float: left;
+    text-align: center;
+    background-image: linear-gradient(to right top, #0d0d0d, #141415, #1a1a1b, #1f1f21, #252527, #252527, #242426, #242426, #1d1d1e, #161617, #0e0e0f, #020202);
+    padding-top: 40px;
+    flex-basis: 10%;
+    color: $color;
+    font-size: $fontSize;
+    @include input(auto, auto, 0, 0);
+    .navlogin__title{
+        font-size: 15px;
+    }
+    button{
+        color: $color;
+        background-image: linear-gradient(to right top, #0d0d0d, #141415, #1a1a1b, #1f1f21, #252527, #252527, #242426, #242426, #1d1d1e, #161617, #0e0e0f, #020202);
+        @include input(100px, 50px, 10px, 7px auto);
+        &:hover{
+            background-image: linear-gradient(to right top, #686871, #696971, #696971, #6a6a71, #6a6a71, #6f6f75, #737379, #78787d, #828286, #8c8c90, #979799, #a1a1a3);
+            color: black;
+        }
+    }    
+}

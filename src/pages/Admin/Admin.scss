@@ -1,0 +1,150 @@
+@import '../../styles/variable.scss';
+
+.main__body__admin{
+    width: auto;
+    display: flex;
+}
+.body__admin{
+    margin: 30px 40px auto 30px;
+    font-size: $fontSize;
+    /*HEADER_MAIN_BODY*/
+.header__body__admin{
+    display: flex;
+    /*CREATE*/
+    .create{
+        flex-basis: 40%;
+        margin: 0 10px;
+        button{
+            padding: 5px;
+            color: $color;
+            border-color:  rgb(250, 66, 72);
+            background-color: rgb(250, 66, 72);
+            @include input(auto, auto, 10px, 20px 0px 20px 20px);
+        }
+    }
+
+    /*EXCEL*/
+    .import{
+        flex-basis: 18%;
+        button{
+            padding: 5px;
+            color: $success;
+            border-color:  $success;
+            background-color: $color;
+            @include input(auto, auto, 10px,  20px 0px 5px 0px);
+            &:hover{
+                color: $color;
+                background-color: $success;
+                padding: 5px;
+            }
+        }
+        .file__import{
+            font-size: 13px;
+        }
+    }
+    .export{ 
+        flex-basis: 22%;
+        margin: 0 30px 0 0;
+        button{
+            padding: 5px;
+            color: $success;
+            border-color:  $success;
+            background-color: $color;
+            @include input(auto, auto, 10px,  20px 0px 5px 0px);
+            &:hover{
+                color: $color;
+                background-color: $success;
+            
+            }
+        }
+    }
+
+    /*MAIL*/
+    .email{
+        flex-basis: 20%;
+        margin: 0 40px;
+        button{
+            padding: 5px;
+            color: $mail;
+            border-color:  $mail;
+            background-color: $color;
+            @include input(auto, auto, 10px,  20px 0px 5px 0px);
+            &:hover{
+                color: $color;
+                background-color: $mail;
+                padding: 5px;
+            }
+        }
+    }
+    /*REFRESH*/
+    .fresh{
+        flex-basis: 25%;
+        float: right;
+        button{
+            padding: 5px;
+            color: $refresh;
+            border-color:  $refresh;
+            background-color: $color;
+            @include input(auto, auto, 10px,  20px 0px 5px 0px);
+            &:hover{
+                color: $color;
+                background-color: $refresh;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+/*MAIN_BODY*/
+.main__table{
+  text-align: center;
+  margin: 20px 0px auto 37px;
+    /*DETAIL*/
+    .btn__detail{
+        color: $color;
+        background-color: $detail;
+        border-color:  $detail;
+        @include input(auto, auto, 10px, auto 5px);
+        &:hover{
+            background-color: $color;
+            color: $detail;
+        }
+    }
+    /*EDIT*/
+    .btn__edit{
+        color: $color;
+        background-color: $edit;
+        border-color:  $edit;
+        @include input(auto, auto, 10px, auto 5px);
+        &:hover{
+            background-color: $color;
+            color: $edit;
+        }
+    }
+    /*DELETE*/
+    .btn__delete{
+        color: $color;
+        background-color: $delete;
+        border-color:  $delete;
+        @include input(auto, auto, 10px, auto 5px);
+        &:hover{
+            background-color: $color;
+            color: $delete;
+        }
+    }
+   
+}
+
+}
+
+ /*LOAD_MORE*/
+ .btn__loadmore{
+    background-color: $color;
+    padding: 5px;
+    color: rgb(5, 5, 5);
+    @include input(auto, auto, 10px, 20px 0px 20px 20px);
+    &:hover{
+        background-color: rgb(13, 13, 14);
+        color: $color;
+    }
+}

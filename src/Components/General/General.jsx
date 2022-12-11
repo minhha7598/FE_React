@@ -54,12 +54,11 @@ function General({ datas }) {
           <div className="title__quantity__employee">EXCELLENT EMPLOYEE</div>
           <div className="main__staff">
             <img
-              src={require("../../assets/img/" + datas[5].ten_anh)}
-              alt={datas[5].ten_anh}
+              src={require("../../assets/img/Vo_Thi_Hien.jpg")}
               className="ava"
             />
-            <div className="name">{datas[5].ho_ten}</div>
-            <div className="position">{datas[5].ten_chuc_vu}</div>
+            <div className="name">Vo Thi Hien</div>
+            <div className="position">Bussiness Analyst</div>
           </div>
         </div>
       </div>

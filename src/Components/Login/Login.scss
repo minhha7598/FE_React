@@ -1,10 +1,15 @@
 @import '../../styles/variable.scss';
 
+.body{
+    background-color: rgb(253, 251, 249);
+    padding-top: 50px;
+    height: 650px;
+}
 .login__form{
     padding: 3em;
     background-color: rgb(193, 193, 194);
     color: $color;
-    @include input(300px, 310px, 15px, 50px auto auto auto);
+    @include input(300px, 310px, 15px, auto);
     font-size: $fontSize;
 }
 .login__failed{
@@ -12,7 +17,7 @@
     background-color: rgb(193, 193, 194);
     color: $color;
     font-size: $fontSize;
-    @include input(300px, 380px, 15px, 50px auto auto auto);
+    @include input(300px, 380px, 15px, auto);
     .err{
         color: rgb(175, 5, 5)
     }

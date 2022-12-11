@@ -1,27 +1,61 @@
+@import '../../styles/variable.scss';
+
 .body__default{
-    background-color: rgb(212, 207, 207);
-    text-align: center;
     padding-top: 50px;
     height: 680px;
+    background-color: rgb(253, 251, 249);
     .title__body{
         font-size: 60px;
+        text-align: center;
     }
-    // .img{
-    //     width: 40px;
-    //     height: 40px;
-    //     margin: 0;
-    //     position: absolute;
-    //     // top: 90%;
-    //     // left: 50%;
-    //     -ms-transform: translate(-50%, -50%);
-    //     transform: translate(-50%, -100%);
-    // }
-    .carousel-slider{
-        margin: 0;
-        position: absolute;
-        top: 90%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+    .main__body{
+        display: flex;
+        margin-top: 50px;
+       
+        .img{
+            flex-basis: 40%;
+            @include input(70px, 70px, 50%, 10px auto auto auto);
+        }
+        .first__body{
+            flex-basis: 30%;
+            color: black;
+            padding-top: 35px;
+            .title{
+                color: rgb(233, 3, 3);
+                font-size: 30px;
+                margin-bottom: 30px;
+                font-weight: 900;
+                li{
+                    color: rgb(241, 84, 84);
+                    font-size: 20px;
+                    list-style: none;
+                    margin-left: 20px;
+                    text-decoration: underline rgb(255, 255, 255);
+                }
+            }
+        }
+        .second__body{
+            flex-basis: 20%;
+            text-align: center;
+            padding-top: 35px;
+            .a{
+                width: 400px;
+                height: 70px;
+                border-radius: 10px;
+                background-color: rgb(113, 244, 128);
+                margin: auto auto 20px 0px;
+                padding-top: 15px;
+            } 
+            .b{
+                width: 400px;
+                height: 70px;
+                border-radius: 10px;
+                background-color: rgb(252, 244, 89);
+                margin: auto auto 20px 30px;
+                padding-top: 15px;
+
+            } 
+        }
     }
 }
+ 

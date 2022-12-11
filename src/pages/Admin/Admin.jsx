@@ -163,7 +163,7 @@ function Admin({
       ten_anh: imgUpdate,
     };
     axios
-      .put(`http://127.0.0.1:8000/api/admin/${editDataID}`, editedData, {
+      .post(`http://127.0.0.1:8000/api/admin/${editDataID}`, editedData, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: "Bearer " + localStorage.getItem("token"),
@@ -176,6 +176,8 @@ function Admin({
       .catch(function (err) {
         console.log("Failed Update!", err);
       });
+    setSuccessEdit(true);
+    setWarning(true);
   };
 
   //DELETE

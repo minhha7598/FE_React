@@ -59,38 +59,40 @@ function Login() {
   return (
     <>
       <Nav />
-      <div className={loginfailed ? loginfailed : "login__form"}>
-        <div className="title__login">
-          <FontAwesomeIcon icon={faUser} size="xs" /> LOGIN
+      <div className="body">
+        <div className={loginfailed ? loginfailed : "login__form"}>
+          <div className="title__login">
+            <FontAwesomeIcon icon={faUser} size="xs" /> LOGIN
+          </div>
+          <hr />
+          <FormGroup>
+            <label>Email :</label>
+            <Label for="exampleEmail" hidden>
+              Email
+            </Label>
+            <Input
+              type="text"
+              name="email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </FormGroup>
+          <p className="err">{err.email}</p>
+          <FormGroup>
+            <label>Password :</label>
+            <Label for="examplePassword" hidden>
+              Password
+            </Label>
+            <Input
+              type="password"
+              name="password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </FormGroup>
+          <p className="err">{err.password}</p>
+          <button className="button" type="submit" onClick={onSubmit}>
+            Submit
+          </button>
         </div>
-        <hr />
-        <FormGroup>
-          <label>Email :</label>
-          <Label for="exampleEmail" hidden>
-            Email
-          </Label>
-          <Input
-            type="text"
-            name="email"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </FormGroup>
-        <p className="err">{err.email}</p>
-        <FormGroup>
-          <label>Password :</label>
-          <Label for="examplePassword" hidden>
-            Password
-          </Label>
-          <Input
-            type="password"
-            name="password"
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </FormGroup>
-        <p className="err">{err.password}</p>
-        <button className="button" type="submit" onClick={onSubmit}>
-          Submit
-        </button>
       </div>
     </>
   );
